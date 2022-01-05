@@ -7,7 +7,7 @@ const MyOrders = () => {
     const { user } = useAuth();
     const [allOrders, setAllOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://mobilepointserver.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, [])
@@ -17,7 +17,7 @@ const MyOrders = () => {
     const handleDelete = (_id) => {
         const confirm = window.confirm('Do you want to delete?')
         if (confirm) {
-            const url = `http://localhost:5000/allOrders/${_id}`;
+            const url = `https://mobilepointserver.herokuapp.com/allOrders/${_id}`;
             fetch(url, {
                 method: 'DELETE',
             })

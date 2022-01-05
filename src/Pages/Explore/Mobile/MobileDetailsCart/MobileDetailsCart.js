@@ -38,7 +38,7 @@ const MobileDetailsCart = (props) => {
 
 
     const handleCartSubmit = (e) => {
-        axios.post('http://localhost:5000/allOrders', order)
+        axios.post('https://mobilepointserver.herokuapp.com/allOrders', order)
             .then(data => {
                 const id = data.data.insertedId;
                 if (id) {

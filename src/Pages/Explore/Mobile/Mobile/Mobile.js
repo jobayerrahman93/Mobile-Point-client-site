@@ -13,7 +13,7 @@ const Mobile = () => {
 
     const mobiles = useSelector((state) => state.mobilesReducer.mobiles);
     const mobile = mobiles.filter(mobile => mobile._id === mobileID);
-    console.log(mobile);
+
     return (
         <>
             <Header></Header>

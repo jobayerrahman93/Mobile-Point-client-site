@@ -14,7 +14,7 @@ const ManageAllOrders = () => {
 
         alert('updated');
         const updatedStatus = 'shipped';
-        axios.put(`http://localhost:5000/allOrders/${_id}`, { status: updatedStatus })
+        axios.put(`https://mobilepointserver.herokuapp.com/allOrders/${_id}`, { status: updatedStatus })
 
     }
 
@@ -22,7 +22,7 @@ const ManageAllOrders = () => {
     const handleDelete = (_id) => {
         const confirm = window.confirm('Do you want to delete?')
         if (confirm) {
-            axios.delete(`http://localhost:5000/allOrders/${_id}`)
+            axios.delete(`https://mobilepointserver.herokuapp.com/allOrders/${_id}`)
                 .then(data => {
                     const deletedCount = data.data.deletedCount;
                     if (deletedCount > 0) {

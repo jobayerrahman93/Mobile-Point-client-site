@@ -27,7 +27,7 @@ const AddNewMobile = () => {
         setMobileData(newMobileData);
     }
     const handleReviewSubmit = (e) => {
-        fetch('http://localhost:5000/mobiles', {
+        fetch('https://mobilepointserver.herokuapp.com/mobiles', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -79,7 +79,7 @@ const AddNewMobile = () => {
                                 variant="filled"
                                 required />
                         </Box>
-                       
+
                         <TextField
                             sx={{ width: '75%', mb: 1 }}
                             onBlur={handleOnBlur}

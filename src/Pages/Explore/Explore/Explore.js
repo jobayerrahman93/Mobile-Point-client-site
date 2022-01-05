@@ -11,7 +11,7 @@ import { useSelector } from 'react-redux';
 
 const Explore = () => {
     const mobiles = useSelector((state) => state.mobilesReducer.mobiles);
-    console.log(mobiles);
+
     return (
         <>
             <Header></Header>

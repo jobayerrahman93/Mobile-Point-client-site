@@ -7,7 +7,7 @@ import Header from '../../Shared/Header/Header';
 import Questions from '../Questions/Questions';
 import Reviews from '../Reviews/Reviews';
 import Topmobiles from '../TopMobiles/TopMobiles';
-
+import "./home.css"
 const Home = () => {
     return (
         <>
@@ -24,11 +24,10 @@ const Home = () => {
                     justifyContent: 'center',
                     alignItems: 'center'
                 }}>
-                <Typography variant="h3" sx={{ fontWeight: 'bold', color: 'lightblue', mb: 3, fontFamily: 'verdana' }}>World's Best Mobiles Are Here</Typography>
-                <Typography variant="h5" sx={{ fontWeight: 'bold', color: 'white', fontFamily: 'verdana' }}>Make Yourself Shine Like Sun</Typography>
+                <Typography variant="h3" className="font-stroke" sx={{ fontWeight: 'bold', color: 'skyblue', mb: 3, fontFamily: 'verdana' }}>World's Best Mobiles Are Here</Typography>
+                <Typography variant="h5" className="font-stroke" sx={{ fontWeight: 'bold', color: 'white', fontFamily: 'verdana' }}>Make Yourself Shine Like Sun</Typography>
                 <Link to='/explore' style={{ textDecoration: 'none' }}>
                     <Button variant="contained" sx={{ px: 3, mt: 3, backgroundColor: '#ff8000' }}>Explore</Button>
-
                 </Link>
             </Box>
             <Topmobiles></Topmobiles>

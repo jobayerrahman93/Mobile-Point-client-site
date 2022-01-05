@@ -30,7 +30,7 @@ function App() {
   // Fetching mobiles
   const fetchMobiles = async () => {
     const response = await axios
-      .get("http://localhost:5000/mobiles/")
+      .get("https://mobilepointserver.herokuapp.com/mobiles/")
       .catch((err) => {
         console.error("Error: ", err);
       });
@@ -44,7 +44,7 @@ function App() {
   // Fetching Reviews
   const fetchReviews = async () => {
     const response = await axios
-      .get('http://localhost:5000/reviews')
+      .get('https://mobilepointserver.herokuapp.com/reviews')
       .catch((err) => {
         console.error("Error ", err);
       });
@@ -59,7 +59,7 @@ function App() {
   // Fetching Orders
   const fetchOrders = async () => {
     const response = await axios
-      .get('http://localhost:5000/allOrders')
+      .get('https://mobilepointserver.herokuapp.com/allOrders')
       .catch((err) => {
         console.error("Error ", err);
       });

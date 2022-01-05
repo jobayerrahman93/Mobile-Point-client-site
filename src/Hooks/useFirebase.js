@@ -67,7 +67,7 @@ const useFirebase = () => {
 
     // admin
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://mobilepointserver.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -86,7 +86,7 @@ const useFirebase = () => {
 
     const saveUser = (email, password, displayName, method) => {
         const user = { email, password, displayName };
-        fetch('http://localhost:5000/users', {
+        fetch('https://mobilepointserver.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
