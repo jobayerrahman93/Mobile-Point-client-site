@@ -1,5 +1,6 @@
 # MobilePoint
-It's a demo website for online mobile shop. Here anyone can buy their favourite mobile.
+
+This is a Team Project and It's a demo website for online mobile shop. Here anyone can buy their favourite mobile.
 
 ## Features
 In this website 
@@ -13,12 +14,3 @@ In this website
 ## Language
 html, css, js, react, mui, nodejs, expressjs, redux, mongodb, context API, 
 
-## live site link
-
-Here is the live link 
-https://mobilepoint.netlify.app/
-
-Client Side
-https://github.com/Avishekdevnath/Teamwork_MobilePoint_Client_Side
-Server Side
-https://github.com/Avishekdevnath/Teamwork_MobilePoint_Server_Side_Code.git
